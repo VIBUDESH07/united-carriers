@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" class="is-loading">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — Madhusree Private Limited</title>
+<meta name="description" content="Send an enquiry. Tell us the product, quantity, packaging and destination." />
+<meta name="theme-color" content="#0b0b0f" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f0a81e'/%3E%3Ctext x='16' y='23' font-family='Arial,sans-serif' font-size='18' font-weight='bold' fill='%23111' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=Inter:wght@300..700&family=Space+Mono:wght@400;700&display=swap" />
+<link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+<body>
+<div class="loader" data-loader>
+  <div class="loader__word">Madhusree Private Limited</div>
+  <div class="loader__bar"><i data-loader-bar></i></div>
+  <div class="loader__pct"><span data-loader-pct>0</span>%</div>
+</div>
+<header data-chrome="header"></header>
+<nav data-chrome="drawer"></nav>
+<main>
+<section class="page-hero dark page-hero--short">
+  <div class="page-hero__bg" data-gl="hero" data-scene="pulse" aria-hidden="true"></div>
+  <div class="wrap">
+    <span class="mono eyebrow">Contact</span>
+    <h1 class="h-display page-hero__title">
+      <span class="line">Let's talk</span>
+      <span class="line"><em>trade.</em></span>
+    </h1>
+    <p class="lead page-hero__sub">
+      Tell us what you are looking to source from India. The more detail you
+      provide, the easier it is for us to understand your requirement and
+      respond appropriately.
+    </p>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="wrap">
+    <div class="contact__grid" data-reveal>
+      <form class="form" data-form novalidate data-sweep>
+        <div class="field"><label for="name">Full name</label>
+          <input id="name" name="name" type="text" required autocomplete="name" />
+          <span class="field__error"></span></div>
+        <div class="field"><label for="company">Company name</label>
+          <input id="company" name="company" type="text" autocomplete="organization" />
+          <span class="field__error"></span></div>
+        <div class="field"><label for="email">Business email</label>
+          <input id="email" name="email" type="email" required autocomplete="email" />
+          <span class="field__error"></span></div>
+        <div class="field"><label for="country">Country</label>
+          <input id="country" name="country" type="text" autocomplete="country-name" />
+          <span class="field__error"></span></div>
+        <div class="field"><label for="phone">Phone / WhatsApp</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" />
+          <span class="field__error"></span></div>
+        <div class="field"><label for="product">Product interested in</label>
+          <select id="product" name="product">
+            <option>Turmeric</option>
+            <option>Cumin Seeds</option>
+            <option>Coriander Seeds</option>
+            <option>Red Chilli</option>
+            <option>Black Pepper</option>
+            <option>Multiple Products</option>
+            <option>Other</option>
+          </select>
+          <span class="field__error"></span></div>
+        <div class="field"><label for="quantity">Required quantity</label>
+          <input id="quantity" name="quantity" type="text" placeholder="e.g. one 20ft container, or 5 MT" />
+          <span class="field__error"></span></div>
+        <div class="field"><label for="packaging">Preferred packaging</label>
+          <input id="packaging" name="packaging" type="text" />
+          <span class="field__error"></span></div>
+        <div class="field"><label for="destination">Destination country / port</label>
+          <input id="destination" name="destination" type="text" />
+          <span class="field__error"></span></div>
+        <div class="field"><label for="spec">Product specification / grade</label>
+          <input id="spec" name="spec" type="text" />
+          <span class="field__error"></span></div>
+        <div class="field field--wide"><label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <span class="field__error"></span></div>
+        <div class="field field--wide">
+          <button class="btn" type="submit">Send enquiry <span class="arrow" aria-hidden="true">→</span></button>
+          <p class="form__status" data-form-status role="status"></p>
+        </div>
+      </form>
+
+      <aside class="contact__aside" data-reveal data-tilt>
+        <h2 class="h3">Get in touch</h2>
+        <span class="rule" data-rule></span>
+        <address class="footer__addr" style="color:var(--content-soft)" data-contact-block></address>
+        <h2 class="h3" style="margin-top:2.5rem">What helps us reply faster</h2>
+        <ul class="ticks">
+          <li>The product and the form you need</li>
+          <li>Required quantity and packaging</li>
+          <li>Destination country or port</li>
+          <li>Any specification your market requires</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="cta dark">
+  <div class="wrap cta__inner">
+    <span class="mono eyebrow">Or start simple</span>
+    <h2 class="h-display" data-split-text data-settle>Just tell us the product.</h2>
+    <p class="lead" style="max-width:50ch">If you are not ready with full details, send the product and destination and we will take it from there.</p>
+    <div class="hero__actions">
+      <a href="products.html" class="btn btn--ghost">Explore products <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+</main>
+<footer data-chrome="footer"></footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Local environment — may hold endpoint URLs and ids. Never commit.
+.env
+.env.local
+.env.*.local
+
+# Editor / OS noise
+.DS_Store
+*.log
